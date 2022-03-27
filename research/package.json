@@ -15,7 +15,9 @@
     "build": "gatsby build",
     "clean": "gatsby clean",
     "serve": "gatsby serve",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -64,7 +66,7 @@
     "husky": "^4.2.3",
     "json5-loader": "^3.0.0",
     "lint-staged": "^10.1.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "prettier": "^2.0.4",
     "prism-react-renderer": "^1.1.1",
     "prismjs": "^1.22.0",
@@ -77,6 +79,8 @@
     "remark-images": "^2.0.0",
     "sharp": "^0.25.2",
     "theme-ui": "^0.3.1",
-    "typography": "^0.16.19"
-  }
+    "typography": "^0.16.19",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
